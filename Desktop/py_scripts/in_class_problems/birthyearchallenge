@@ -1,0 +1,14 @@
+# Problem 3: Challenge (Thurs, Sept 15, 2022)
+
+cur_year = 2022
+print("How old are you?")
+cur_age = input()
+print("Has your birthday already happened this year? Say YES or NO:")
+answer = input()
+if answer == "YES":
+    end_of_year_age = int(cur_age)
+else:
+    end_of_year_age = int(cur_age) + 1
+birth_year = cur_year - end_of_year_age
+sentence = "You were born in the year " + str(birth_year) + "."
+print(sentence)

@@ -1,0 +1,7 @@
+# In-Class Problem 1: Birth Year (Thurs, Sept 15, 2022)
+
+cur_year = 2022 # set the value of the variable cur_year to 2022
+end_of_year_age = 20 # set the value of the variable end_of_year_age to whatever your age will be at the end of this calendar year
+birth_year = cur_year - end_of_year_age 
+sentence = "You were born in the year " + str(birth_year) + "."
+print(sentence)
