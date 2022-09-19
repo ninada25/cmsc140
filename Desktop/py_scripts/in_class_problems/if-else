@@ -1,0 +1,17 @@
+# In-class exercises: Monday, September 19, 2022
+
+# Exercise 2: If/Else
+
+# Write a program that asks a user to type their name. Tell them if their name comes earlier or later in the
+# alphabet than your name. If you have the same name, tell them that as well!
+
+print("Hello! Please enter your name.")
+user_name = input()
+my_name = "Nina"
+
+if user_name < my_name:
+    print("Your name comes earlier in the alphabet than my name!")
+elif user_name == my_name:
+    print("We have the same name!")
+else: 
+    print("Your name comes later in the alphabet than my name!")

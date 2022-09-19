@@ -1,0 +1,17 @@
+# In-class exercises: Monday, September 19, 2022
+
+# Exercise 3: Write a Calculator
+
+# Write a very simple calculator that takes two numbers from the user and asks them whether they 
+# want to add, multiply, divide, or subtract them. 
+# Then it performs the correct operation and prints the value.
+
+print("Welcome to the calculator.")
+print("Enter number 1:")
+num1 = int(input())
+print("Enter number 2:")
+num2 = int(input())
+print("Enter operation [a,s,d,m]:")
+op = input()
+
+# in progress :)
