@@ -9,5 +9,6 @@ start_from = int(input())
 print("Please enter how much to count down by: ")
 count_down_by = int(input())
 
+# for loop
 for i in range(start_from, -1, -count_down_by):
     print(i)
