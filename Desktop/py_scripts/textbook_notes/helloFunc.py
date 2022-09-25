@@ -1,4 +1,4 @@
-""" def hello(): # define a function named hello()
+def hello(): # define a function named hello()
     print('Howdy!') # body of the func, executed when func is called not when it is first defined
     print('Howdy!!!')
     print('Hello there.')
@@ -14,7 +14,7 @@ def hello(name):
 
 hello("Alice")
 hello("Bob")
- """
+
 import random
 
 def getAnswer(answerNumber):
@@ -37,8 +37,16 @@ def getAnswer(answerNumber):
     elif answerNumber == 9:
         return 'Very doubtful'
 
-    r = random.randint(1,9)
-    fortune = getAnswer(r)
-    print(fortune)
+r = random.randint(1,9)
+fortune = getAnswer(r)
+print(fortune)
 
-    # alternatively, print(getAnswer(random.randint(1,9)))
+# alternatively, print(getAnswer(random.randint(1,9)))
+
+# the print() function automatically adds a newline character to the end of the string it is passed. to change this, use the end keyword arg:
+print('Hello', end = '')
+print('World')
+
+#the print() func automatically separates string values with a single space. to change this, could pass sep keyword.
+print('cats','dogs','mice')
+print('cats', 'dogs', 'mice', sep=',')
