@@ -46,7 +46,7 @@ for i in range(start, (stop + 1)): # want to include the number indicated for th
             counter_b += 1
     lengths_b.append(counter_b) # add the length of the chain to the list
     counter_b = 0
-print(lengths_b)
+print(lengths_b) # oops I don't actually need this line?
 
 max_value_b = max(lengths_b) # https://www.adamsmith.haus/python/answers/how-to-find-the-index-of-the-max-value-in-a-list-in-python
 max_index_b = lengths_b.index(max_value_b) # https://www.adamsmith.haus/python/answers/how-to-find-the-index-of-the-max-value-in-a-list-in-python
