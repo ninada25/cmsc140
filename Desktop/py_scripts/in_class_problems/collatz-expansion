@@ -1,0 +1,21 @@
+# Monday, Sept 26: In-Class Exercise 2
+
+# Using 1B from the last lab, write a function called collatz() that 
+# 1. Takes in a number, num, as its argument.
+# 2. Prints out the chain from the number to 1. 
+
+def collatz(num):
+    counter = 0 
+    while num != 1:
+        if num % 2 == 0: # if the number is even, run this code
+            num = num // 2 # bonus
+            print("Div by 2: ", num)
+        else:
+            num = (3 * num) + 1
+            print("Times 3 Plus 1: ", num)
+        counter += 1
+        
+    print("Length of chain:", counter)
+
+collatz(22)
+
