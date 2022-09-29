@@ -17,11 +17,10 @@ for num in range(2, 1001):
             counter += 1
     lengths.append(counter) # add the length of the chain to the list
     counter = 0 # reset counter to 0
-print(lengths)
 
 max_value = max(lengths) # https://www.adamsmith.haus/python/answers/how-to-find-the-index-of-the-max-value-in-a-list-in-python
 max_index = lengths.index(max_value) # https://www.adamsmith.haus/python/answers/how-to-find-the-index-of-the-max-value-in-a-list-in-python
-print("Longest Chain: ", max_index + 2) 
+print("Longest Chain is from: ", max_index + 2) # adding 2 here works (and produces the correct output) because the range starts at 2 
 print("Length of Chain: ", max(lengths))
 
 # Part 2b: User-Defined Range
@@ -46,9 +45,8 @@ for i in range(start, (stop + 1)): # want to include the number indicated for th
             counter_b += 1
     lengths_b.append(counter_b) # add the length of the chain to the list
     counter_b = 0
-print(lengths_b) # oops I don't actually need this line?
 
 max_value_b = max(lengths_b) # https://www.adamsmith.haus/python/answers/how-to-find-the-index-of-the-max-value-in-a-list-in-python
 max_index_b = lengths_b.index(max_value_b) # https://www.adamsmith.haus/python/answers/how-to-find-the-index-of-the-max-value-in-a-list-in-python
-print("Longest Chain: ", max_index_b + 2) 
+print("Longest Chain is from: ", max_index_b + start) # to fix my off-by-one error, rather than adding 2 to 'max_index_b', I have added 'start' to 'max_index_b'
 print("Length of Chain: ", max(lengths_b))
