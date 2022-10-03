@@ -20,7 +20,7 @@ def longest_collatz(start, stop):
         counter = 0
     max_value = max(lengths) # https://www.adamsmith.haus/python/answers/how-to-find-the-index-of-the-max-value-in-a-list-in-python
     max_index = lengths.index(max_value) # https://www.adamsmith.haus/python/answers/how-to-find-the-index-of-the-max-value-in-a-list-in-python
-    chain_from = max_index + start # to fix my off-by-one error, rather than adding 2 to 'max_index_b', I have added 'start' to 'max_index_b'
+    chain_from = max_index + start # add 'start' to 'max_index_b' to reflect proper index
     return "Longest Chain is from: " + str(chain_from) 
     
 print(longest_collatz(1,100))
