@@ -43,7 +43,7 @@ def function_chooser():
     print("1 = Cumulative Sum")
     print("2 = Countdown")
     choice = int(input())
-    print("Your choice: {" + str(choice) + "}") # tell user which function they chose
+   # print("Your choice: {" + str(choice) + "}") # tell user which function they chose
     if choice == 1:
         print("Please enter first number: ") # prompt user to enter a first number
         start = int(input())
@@ -59,3 +59,7 @@ def function_chooser():
         countdown(start_from, count_down_by)
 
 function_chooser()
+
+# Notes for revision:
+# Remember for Mastery credit, you shouldn't print anything before the function chooser is called. 
+# You should remove your earlier print statements and function calls for Mastery credit.

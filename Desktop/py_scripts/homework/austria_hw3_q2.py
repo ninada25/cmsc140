@@ -9,30 +9,38 @@
 
 import random
 
-num = random.randint(1, 100) # assign a random int in the range [1,100] to the variable 'num'
-
 def random_number_guesser(number_guesses):
-        print("How many guesses?:")
-        number_guesses = int(input())
-        print("Welcome to the random number guesser.")
+    num = random.randint(1,100) # generate a random number in the range [1,100]
+    print("How many guesses?:") # ask user to input the number of guesses they want to take
+    number_guesses = int(input())
 
-        while True:
-            if(number_guesses >= 1):
-                print("Please input a number between 1 and 100: ") # ask user to input a number
-                guess = input()
-            
-                if int(guess) > num:
-                    number_guesses -= 1
-                    print(guess + " is too high. Try again (" + str(number_guesses) + " guesses left):")
-                elif int(guess) < num:
-                    number_guesses -= 1
-                    print(guess + " is too low. Try again (" + str(number_guesses) + " guesses left):")
-                else:
-                    print("Yes! " + guess + " is the correct number.")
-                    #break
-                    exit()
-            else:
-                print("Sorry, you lost. The correct number was " + str(num) + ".")
-                break
+    print("Please input a number between 1 and 100: ") # ask user to input a number
 
-random_number_guesser(7)
+    while number_guesses != 1: # while number of guesses is not 1
+        guess = input() 
+
+        number_guesses -= 1 # number_guesses = number_guesses - 1
+        
+        if int(guess) > num: # if the number the user guesses is higher than the chosen number
+            print(guess + " is too high. Try again (" + str(number_guesses) + " guesses left):")
+        elif int(guess) < num: # if the number the user guesses is lower than the chosen number
+            print(guess + " is too low. Try again (" + str(number_guesses) + " guesses left):")
+        else: # if the user guesses correctly
+            print("Yes! " + guess + " is the correct number.")
+            break
+
+    if number_guesses == 1: # once the user is at their final guess, run this code
+     #   print("Please input a number between 1 and 100: ") # ask user to input a number
+        guess = input() 
+
+        number_guesses -= 1
+        
+        if int(guess) > num: # if the number the user guesses is higher than the chosen number
+            print("Sorry, you lost. The correct number was " + str(num) + ".")
+        elif int(guess) < num: # if the number the user guesses is lower than the chosen number
+            print("Sorry, you lost. The correct number was " + str(num) + ".")
+        else: # if the user guesses correctly
+            print("Yes! " + guess + " is the correct number.")
+            exit()
+
+random_number_guesser(3) # question for Dr. Ackles: isn't it redundant to have the function take in an argument that is the number of guesses a user has 

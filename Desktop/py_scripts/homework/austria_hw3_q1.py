@@ -23,4 +23,4 @@ def longest_collatz(start, stop):
     chain_from = max_index + start # add 'start' to 'max_index_b' to reflect proper index
     return "Longest Chain is from: " + str(chain_from) 
     
-print(longest_collatz(1,100))
+print(longest_collatz(1,100)) # just using this to test my code
