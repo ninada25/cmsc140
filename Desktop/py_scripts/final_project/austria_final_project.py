@@ -75,7 +75,3 @@ def wordle_game():
             exit()
 
 wordle_game()
-
-
-
-
